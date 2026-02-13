@@ -13,7 +13,7 @@ The assistant can:
 ## User Interface (UI)
 The project now includes a modern React.js-based frontend application that allows users to easily submit research topics and view the streaming output from the AI Research Assistant in real-time. The UI provides visual feedback on the agent's progress, including LLM reasoning, tool invocations, and the final structured research output.
 
-![AI Research Assistant UI Screenshot](UI.jpg)
+![AI Research Assistant UI Screenshot](UI2.jpg)
 
 ## Architecture Diagram
 ```mermaid
