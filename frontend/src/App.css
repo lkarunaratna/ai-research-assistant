@@ -1,0 +1,134 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.App-main {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.research-form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.research-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.research-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.research-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.research-form button:hover:not(:disabled) {
+  background-color: #21a1f1;
+  color: white;
+}
+
+.output-section {
+  width: 100%;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  min-height: 150px;
+  overflow-y: auto;
+  max-height: 400px;
+  white-space: pre-wrap; /* Preserve whitespace and wrap text */
+}
+
+.output-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.output-item {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-left: 4px solid #61dafb;
+  background-color: #e9f8fe;
+}
+
+.output-item-llm_full_response {
+  border-color: #4CAF50;
+  background-color: #e8f5e9;
+}
+
+.output-item-tool_start {
+  border-color: #FFC107;
+  background-color: #fff8e1;
+}
+
+.output-item-tool_end {
+  border-color: #FF9800;
+  background-color: #ffedc6;
+}
+
+.output-item-agent_action {
+  border-color: #9C27B0;
+  background-color: #f3e5f5;
+}
+
+.output-item-agent_finish {
+  border-color: #3F51B5;
+  background-color: #e8eaf6;
+}
+
+.output-item-agent_reasoning_start {
+    border-color: #2196F3;
+    background-color: #e3f2fd;
+}
+
+.output-item-final_research_output {
+  border-color: #F44336;
+  background-color: #ffebee;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
